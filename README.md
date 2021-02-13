@@ -10,10 +10,14 @@ _01_dataprep.R_ has code to wrangle the data for mapping. It includes this comme
 
 `all_data <- geojson_sf(gzfile("data/precincts-with-results.geojson.gz"))`
 
-_02_maps.R_ has code to create maps. I suggest subsetting the data for a specific state, county, or other smaller region since mapping the entire data set will take quite awhile.
+_02_maps.R_ has code to create maps. I suggest using a subset the data for a specific state, county, or other smaller region since mapping the entire data set will take quite awhile.
 
 The function for creating a Leaflet map from wrangled data is in the file _map_function.R_.
 
-Many thanks to The Upshot for open-sourcing this data!
+![_New York City metro area precinct-level results, 2020 Presidential Election_](img/map.gif)
+
+Many thanks to The Upshot for open-sourcing this data! 
+
+This code is distributed under the same MIT License as The Upshot used for its data set.
 
 Sharon Machlis
